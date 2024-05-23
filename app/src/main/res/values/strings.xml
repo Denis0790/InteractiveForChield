@@ -2,4 +2,7 @@
     <string name="app_name">InteractiveForChield</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_professions_main">ПРОФЕССИИ</string>
+    <string name="btn_transport_main">ТРАНСПОРТ</string>
+    <string name="btn_animal_main">ЖИВОТНЫЕ</string>
 </resources>

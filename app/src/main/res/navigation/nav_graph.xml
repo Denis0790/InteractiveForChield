@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.interactiveforchield.main_screens.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_animalFragment"
+            app:destination="@id/animalFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_professionsFragment"
+            app:destination="@id/professionsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_transportFragment"
+            app:destination="@id/transportFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_followAuthorFragment"
+            app:destination="@id/followAuthorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/animalFragment"
+        android:name="com.example.interactiveforchield.main_screens.category_screens.AnimalFragment"
+        android:label="fragment_animal"
+        tools:layout="@layout/fragment_animal" >
+        <action
+            android:id="@+id/action_animalFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_animalFragment_to_animalTestFragment"
+            app:destination="@id/animalTestFragment" />
+        <action
+            android:id="@+id/action_animalFragment_to_beastFragment"
+            app:destination="@id/beastFragment" />
+        <action
+            android:id="@+id/action_animalFragment_to_birdsFragment"
+            app:destination="@id/birdsFragment" />
+        <action
+            android:id="@+id/action_animalFragment_to_insectsFragment"
+            app:destination="@id/insectsFragment" />
+        <action
+            android:id="@+id/action_animalFragment_to_underwaterFragment"
+            app:destination="@id/underwaterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/professionsFragment"
+        android:name="com.example.interactiveforchield.main_screens.category_screens.ProfessionsFragment"
+        android:label="fragment_professions"
+        tools:layout="@layout/fragment_professions" >
+        <action
+            android:id="@+id/action_professionsFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_professionsFragment_to_occupationsFragment"
+            app:destination="@id/occupationsFragment" />
+        <action
+            android:id="@+id/action_professionsFragment_to_professionsTestFragment"
+            app:destination="@id/professionsTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transportFragment"
+        android:name="com.example.interactiveforchield.main_screens.category_screens.TransportFragment"
+        android:label="fragment_transport"
+        tools:layout="@layout/fragment_transport" >
+        <action
+            android:id="@+id/action_transportFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_transportFragment_to_transportsTestFragment"
+            app:destination="@id/transportsTestFragment" />
+        <action
+            android:id="@+id/action_transportFragment_to_waterTransportsFragment"
+            app:destination="@id/waterTransportsFragment" />
+        <action
+            android:id="@+id/action_transportFragment_to_groundTransportsFragment"
+            app:destination="@id/groundTransportsFragment" />
+        <action
+            android:id="@+id/action_transportFragment_to_airTransportsFragment"
+            app:destination="@id/airTransportsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/followAuthorFragment"
+        android:name="com.example.interactiveforchield.main_screens.FollowAuthorFragment"
+        android:label="fragment_follow_author"
+        tools:layout="@layout/fragment_follow_author" >
+        <action
+            android:id="@+id/action_followAuthorFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/animalTestFragment"
+        android:name="com.example.interactiveforchield.main_screens.category_screens.animal_screens.AnimalTestFragment"
+        android:label="fragment_animal_test"
+        tools:layout="@layout/fragment_animal_test" >
+        <action
+            android:id="@+id/action_animalTestFragment_to_animalFragment"
+            app:destination="@id/animalFragment" />
+        <action
+            android:id="@+id/action_animalTestFragment_to_animalTestResultFragment"
+            app:destination="@id/animalTestResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/animalTestResultFragment"
+        android:name="com.example.interactiveforchield.main_screens.category_screens.animal_screens.AnimalTestResultFragment"
+        android:label="fragment_animal_test_result"
+        tools:layout="@layout/fragment_animal_test_result" >
+        <action
+            android:id="@+id/action_animalTestResultFragment_to_animalFragment2"
+            app:destination="@id/animalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/beastFragment"
+        android:name="com.example.interactiveforchield.main_screens.category_screens.animal_screens.BeastFragment"
+        android:label="fragment_beast"
+        tools:layout="@layout/fragment_beast" >
+        <action
+            android:id="@+id/action_beastFragment_to_animalFragment"
+            app:destination="@id/animalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/birdsFragment"
+        android:name="com.example.interactiveforchield.main_screens.category_screens.animal_screens.BirdsFragment"
+        android:label="fragment_birds"
+        tools:layout="@layout/fragment_birds" >
+        <action
+            android:id="@+id/action_birdsFragment_to_animalFragment"
+            app:destination="@id/animalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/insectsFragment"
+        android:name="com.example.interactiveforchield.main_screens.category_screens.animal_screens.InsectsFragment"
+        android:label="fragment_insects"
+        tools:layout="@layout/fragment_insects" >
+        <action
+            android:id="@+id/action_insectsFragment_to_animalFragment"
+            app:destination="@id/animalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/airTransportsFragment"
+        android:name="com.example.interactiveforchield.main_screens.category_screens.transports_screens.AirTransportsFragment"
+        android:label="fragment_air_transports"
+        tools:layout="@layout/fragment_air_transports" >
+        <action
+            android:id="@+id/action_airTransportsFragment_to_transportFragment"
+            app:destination="@id/transportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groundTransportsFragment"
+        android:name="com.example.interactiveforchield.main_screens.category_screens.transports_screens.GroundTransportsFragment"
+        android:label="fragment_ground_transports"
+        tools:layout="@layout/fragment_ground_transports" >
+        <action
+            android:id="@+id/action_groundTransportsFragment_to_transportFragment"
+            app:destination="@id/transportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/underwaterFragment"
+        android:name="com.example.interactiveforchield.main_screens.category_screens.animal_screens.UnderwaterFragment"
+        android:label="fragment_underwater"
+        tools:layout="@layout/fragment_underwater" >
+        <action
+            android:id="@+id/action_underwaterFragment_to_animalFragment"
+            app:destination="@id/animalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/waterTransportsFragment"
+        android:name="com.example.interactiveforchield.main_screens.category_screens.transports_screens.WaterTransportsFragment"
+        android:label="fragment_water_transports"
+        tools:layout="@layout/fragment_water_transports" >
+        <action
+            android:id="@+id/action_waterTransportsFragment_to_transportFragment"
+            app:destination="@id/transportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transportsTestFragment"
+        android:name="com.example.interactiveforchield.main_screens.category_screens.transports_screens.TransportsTestFragment"
+        android:label="fragment_transports_test"
+        tools:layout="@layout/fragment_transports_test" >
+        <action
+            android:id="@+id/action_transportsTestFragment_to_transportsTestResultFragment"
+            app:destination="@id/transportsTestResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transportsTestResultFragment"
+        android:name="com.example.interactiveforchield.main_screens.category_screens.transports_screens.TransportsTestResultFragment"
+        android:label="fragment_transports_test_result"
+        tools:layout="@layout/fragment_transports_test_result" >
+        <action
+            android:id="@+id/action_transportsTestResultFragment_to_transportFragment"
+            app:destination="@id/transportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/occupationsFragment"
+        android:name="com.example.interactiveforchield.main_screens.category_screens.professions_screens.OccupationsFragment"
+        android:label="fragment_occupations"
+        tools:layout="@layout/fragment_occupations" >
+        <action
+            android:id="@+id/action_occupationsFragment_to_professionsFragment"
+            app:destination="@id/professionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/professionsTestFragment"
+        android:name="com.example.interactiveforchield.main_screens.category_screens.professions_screens.ProfessionsTestFragment"
+        android:label="fragment_professions_test"
+        tools:layout="@layout/fragment_professions_test" >
+        <action
+            android:id="@+id/action_professionsTestFragment_to_professionsFragment"
+            app:destination="@id/professionsFragment" />
+        <action
+            android:id="@+id/action_professionsTestFragment_to_professionsTestResultFragment"
+            app:destination="@id/professionsTestResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/professionsTestResultFragment"
+        android:name="com.example.interactiveforchield.main_screens.category_screens.professions_screens.ProfessionsTestResultFragment"
+        android:label="fragment_professions_test_result"
+        tools:layout="@layout/fragment_professions_test_result" >
+        <action
+            android:id="@+id/action_professionsTestResultFragment_to_professionsFragment"
+            app:destination="@id/professionsFragment" />
+    </fragment>
+</navigation>
